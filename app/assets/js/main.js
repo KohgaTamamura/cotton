@@ -6,6 +6,8 @@
 
 (function($) {
 
+
+
 	var settings = {
 
 		// Parallax background effect?
@@ -38,6 +40,9 @@
 			$window.on('load', function() {
 				$body.removeClass('is-loading');
 			});
+
+
+
 
 		// Touch?
 			if (skel.vars.mobile) {
@@ -130,9 +135,21 @@
 
 							$header.css('background-position', 'left 0px');
 
-							$window.on('scroll.strata_parallax', function() {
-								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-							});
+
+			    var imgx = 0;
+			    setInterval(function(){
+			    	if(imgx < 95){
+			        imgx-=0.5;
+			      }else if(5<imgx){
+			        imgx+=0.5;
+			      }
+			        $('#header').css('background-position', imgx + 'px 0');
+			    }, 50);
+
+
+							// $window.on('scroll.strata_parallax', function() {
+							// 	$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+							// });
 
 						}
 
