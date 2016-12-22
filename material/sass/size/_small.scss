@@ -58,6 +58,22 @@
         // }
       }
 
+/* navigation */
+
+#gnav {
+  right:-80%;
+  width: 80%;
+  background:#F00;
+}
+
+
+      body.header-visible #gnav{
+        -moz-transform: translateX(-80%);
+        -webkit-transform: translateX(-80%);
+        -ms-transform: translateX(-80%);
+        transform: translateX(-80%);
+      }
+
 
     /* Main */
 

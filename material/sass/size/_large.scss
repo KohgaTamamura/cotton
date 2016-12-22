@@ -25,12 +25,15 @@
     /* Main */
 
       #main {
-        margin-left: $size-header-width;
+        // margin-left: $size-header-width;
         // max-width: none;
         // padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-        width: calc(100% - #{$size-header-width});
+        // width: calc(100% - #{$size-header-width});
+
+
 
       }
+
 
 
 

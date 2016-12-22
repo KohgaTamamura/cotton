@@ -56,6 +56,25 @@
         // }
       }
 
+
+/*navigation*/
+
+#gnav {
+  right:-90%;
+  width: 90%;
+  background:#F00;
+}
+
+
+      body.header-visible #gnav{
+        -moz-transform: translateX(-90%);
+        -webkit-transform: translateX(-90%);
+        -ms-transform: translateX(-90%);
+        transform: translateX(-90%);
+      }
+
+
+
 /*main*/
       #main {
         

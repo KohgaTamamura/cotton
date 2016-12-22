@@ -1,26 +1,33 @@
 /* Main */
 
 #wrapper{
-	position: absolute;
-	top:0;
-	left:0;
-
-
-
-
+	// position: absolute;
+	// top:0;
+	// left:0;
 }
 
 	#main {
-		z-index: 10010;
 		margin-left: $size-header-width;
 		// max-width: 50em + $size-header-pad;
 		// max-width: 900px;
 		width: calc(100% - #{$size-header-width});
-	
+		// width: 65%;
+
 		.mainWrapper{
 			width:100%;
+			max-width:900px;
       padding: _size(layout-margin) _size(layout-margin)*2;
+      position:relative;
 		}
+
+					.inbox:after, .inbox:before {
+						content: '';
+						display: block;
+						clear: both;
+						height: 0;
+					}
+
+
 
 		> section {
 			border-top: solid 2px _palette(border);
